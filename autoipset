@@ -1,0 +1,26 @@
+#!/bin/sh /etc/rc.common
+
+# OpenWrt /etc/init.d/ script to automatically add ipsets across reboots
+#
+#
+# howto:
+# - upload this file as /etc/init.d/autoipset
+# - # chmod 755 /etc/init.d/autoipset
+# - # /etc/init.d/autoipset enable
+# - # /etc/init.d/autoipset start
+
+# queue this init script to start (i.e., create IPSet) right before dnsmasq starts (19)
+START=18
+
+setipset() {
+	ipset -N fbcdn hash:ip
+    ipset -N facebook hash:ip
+	ipset -N instagram hash:ip
+	ipset -N twitter hash:ip
+	ipset -N twimg hash:ip
+	ipset -N tco hash:ip
+}
+
+start() {
+	setipset
+}
