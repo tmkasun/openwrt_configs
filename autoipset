@@ -19,6 +19,26 @@ setipset() {
 	ipset -N twitter hash:ip
 	ipset -N twimg hash:ip
 	ipset -N tco hash:ip
+	ipset -N zoom hash:ip
+	ipset -N cloudfront hash:ip
+	ipset -N gmail hash:ip
+	ipset -N gdocs hash:ip
+	ipset -N gmeet hash:ip
+	ipset -N gcalendar hash:ip
+	ipset -N gplay hash:ip
+	ipset -N hangouts hash:ip
+	ipset -N gaccounts hash:ip
+	ipset -N gapis hash:ip
+	ipset -N githubassets hash:ip
+	ipset -N githubapis hash:ip
+	ipset -N github hash:ip
+	ipset -N githubusercontent hash:ip
+	ipset -N wwwhotmail hash:ip
+	ipset -N hotmail hash:ip
+	ipset -N outlooklive hash:ip
+	ipset -N contentstorage hash:ip
+	ipset -N outlook1 hash:ip
+	ipset -N wso2support hash:ip
 }
 
 start() {
