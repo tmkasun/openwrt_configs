@@ -13,9 +13,9 @@
 START=18
 
 setipset() {
-	ipset -N fbcdn hash:ip
-    ipset -N facebook hash:ip
+	ipset -N facebook hash:ip
 	ipset -N instagram hash:ip
+	ipset -N fbcdn hash:ip
 	ipset -N twitter hash:ip
 	ipset -N twimg hash:ip
 	ipset -N tco hash:ip
@@ -29,6 +29,10 @@ setipset() {
 	ipset -N hangouts hash:ip
 	ipset -N gaccounts hash:ip
 	ipset -N gapis hash:ip
+	ipset -N gcontacts hash:ip
+	ipset -N fontsgstatic hash:ip
+	ipset -N gstatic hash:ip
+	ipset -N drivegoogle hash:ip
 	ipset -N githubassets hash:ip
 	ipset -N githubapis hash:ip
 	ipset -N github hash:ip
