@@ -7,3 +7,4 @@ This repo contains the OpenWRT configurations for my customisations
 0 8 * * * uci set mwan3.all.use_policy='all_wans'; uci commit; mwan3 restart
 0 0 * * * uci set mwan3.all.use_policy='testp'; uci commit; mwan3 restart
 ```
+- [Discussion on how to shedule wifi](https://forum.openwrt.org/t/scheduling-on-off-wifi/3385/25)
