@@ -36,7 +36,7 @@ setipset() {
 	ipset -N githubassets hash:ip
 	ipset -N githubapis hash:ip
 	ipset -N github hash:ip
-	ipset -N githubusercontent hash:ip
+	ipset -N gitusrcnt hash:ip
 	ipset -N wwwhotmail hash:ip
 	ipset -N hotmail hash:ip
 	ipset -N outlooklive hash:ip
