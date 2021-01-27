@@ -15,5 +15,9 @@ echo "Transfering tunnelbear_configs . . ."
 scp -r tunnelbear_configs/* root@192.168.1.1:/etc/openvpn/
 
 
+echo "Transfering knnect_configs . . ."
+scp -r knnect/client-configs/* root@192.168.1.1:/etc/openvpn/knnect/
+
+
 echo "Transfering mwan3 . . ."
 scp ../mwan3 root@192.168.1.1:/etc/config/mwan3
