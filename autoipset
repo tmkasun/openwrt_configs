@@ -10,6 +10,7 @@
 # - # /etc/init.d/autoipset start
 
 # queue this init script to start (i.e., create IPSet) right before dnsmasq starts (19)
+### Don't edit this use dnsmasq.parser.py
 START=18
 
 setipset() {
