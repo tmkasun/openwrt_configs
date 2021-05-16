@@ -44,6 +44,12 @@ setipset() {
 	ipset -N contentstorage hash:ip
 	ipset -N outlook1 hash:ip
 	ipset -N wso2support hash:ip
+	ipset -N apifacebook hash:ip
+	ipset -N edgemqttfacebk hash:ip
+	ipset -N graphfacebook hash:ip
+	ipset -N mqttc10rfacebk hash:ip
+	ipset -N portalfbcom hash:ip
+	ipset -N starc10rfacebk hash:ip
 }
 
 start() {

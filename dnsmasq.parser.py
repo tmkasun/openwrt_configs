@@ -29,7 +29,7 @@ def main():
                     raise Exception("Domain already exist = {}".format(domain))
                 if len(name) > 15:
                     raise Exception("Name length exceed 15 max len = {}".format(name))
-                print("ipset -N {name} hash:ip".format(name=name))
-                # print(mwan3_config.format(name=name))
+                # print("ipset -N {name} hash:ip".format(name=name))
+                print(mwan3_config.format(name=name))
 if __name__ == "__main__":
     main()
