@@ -25,6 +25,8 @@ sudo systemctl stop nginx.service
 sudo certbot renew
 ```
 
+### Check the permissions before coping
+
 4. Copy the certificate files to temporary location
 ```
 sudo cp -R  /etc/letsencrypt/archive/router.knnect.com/ .
